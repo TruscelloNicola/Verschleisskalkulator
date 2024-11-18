@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\AlfaSlabOne-Regular.ttf" />
+    <None Remove="Resources\MSCLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\AlfaSlabOne-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\MSCLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
